@@ -13,3 +13,18 @@ def find_min(arr):
 
 arr = [64, 34, 25, 5, 22, 11, 90, 12]
 print(find_min(arr)) # --> output : (5,3)
+
+
+# another way to find only the MINIMUM VALUE(element):
+
+def find_minn(arr):
+    smallest = arr[0]
+    
+    for i in arr:
+        if i < smallest:
+            smallest = i
+
+    return smallest
+
+arr = [64, 34, 25, 5, 22, 11, 90, 12]
+print(find_minn(arr)) # --> output : 5 because the index i looks at the elements only in this case
