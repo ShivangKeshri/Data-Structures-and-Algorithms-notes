@@ -9,8 +9,8 @@ def max_val(array):
         if array[i] > maxval: # If the element is greater than the initalized maxval, we find get the element.
             maxval = array[i]
             maxval_index = i
-    return maxval
+    return maxval, maxval_index
 
 array = [1,2,6,8,9,-1]
-print("the largest value is at index : ", max_val(array))
+print("the largest value is value, index : ", max_val(array))
       
