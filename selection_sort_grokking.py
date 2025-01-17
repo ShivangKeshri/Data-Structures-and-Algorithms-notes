@@ -9,4 +9,8 @@ def minimum_value(arr):
   return min_val_index
 
 def selectionsort(arr):
-  
+  newArr = []
+  for i in range(len(arr)):
+   smallest = findSmallest(arr)
+   newArr.append(arr.pop(smallest))
+  return newArr
